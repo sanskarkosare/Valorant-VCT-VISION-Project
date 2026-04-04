@@ -400,10 +400,16 @@ if 'match_data' in st.session_state:
             if 'Diff_Team_Combo' in input_df.columns:
                 val = input_df['Diff_Team_Combo'].values[0]
                 text_val = "Even" if val == 0 else f"+{val} Advantage"
-                col_m3.metric("Draft Synergy Gap", text_val).columns: 
-                col_m2.metric("First Blood Advantage (FKPR Diff)", f"{input_df['Diff_Avg_FKPR'].values[0]:.3f}")
-                
-            if 'Diff_Team_Combo' in input_df.columns:
-                val = input_df['Diff_Team_Combo'].values[0]
-                text_val = "Even" if val == 0 else f"+{val} Advantage"
-                col_m3.metric("Draft Synergy Gap", text_val)age")
+                col_m3.metric("Draft Synergy Gap", text_val) 
+
+                col_m2.metric("First Blood Advantage (FKPR Diff)", f"{input_df['Diff_Avg_FKPR'].values[0]:.3f}")
+
+                
+
+            if 'Diff_Team_Combo' in input_df.columns:
+
+                val = input_df['Diff_Team_Combo'].values[0]
+
+                text_val = "Even" if val == 0 else f"+{val} Advantage"
+
+                col_m3.metric("Draft Synergy Gap", text_val)
