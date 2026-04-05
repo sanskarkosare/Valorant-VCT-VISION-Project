@@ -15,7 +15,7 @@ from selenium.common.exceptions import TimeoutException
 # ==========================================
 # 1. UI SETUP, CSS, & CACHING
 # ==========================================
-st.set_page_config(page_title="VCT Betting", page_icon="🔴", layout="wide")
+st.set_page_config(page_title="VCT VISION", page_icon="🔴", layout="wide")
 
 st.markdown("""
     <style>
@@ -255,7 +255,7 @@ col_logo, col_title = st.columns([1, 15])
 with col_logo: 
     st.image("logo.png", width=65) 
 with col_title: 
-    st.markdown("<h1 class='val-title'><span class='val-red'>VCT</span> BETTING</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='val-title'><span class='val-red'>VCT</span> VISION</h1>", unsafe_allow_html=True)
 
 st.markdown("Paste a specific VLR.gg single map link below. The AI parses the combat records of all 10 players, calculates Synergy Differentials, and executes a Neural Network prediction.")
 st.divider()
